@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="StoredValue\TopupPointsGrowthService - 副本.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="3.1.5" />
+    <PackageReference Include="EPPlus" Version="5.1.0" />
+    <PackageReference Include="FluentFTP" Version="32.4.5" />
+    <PackageReference Include="IdGen" Version="2.2.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.6" />
+    <PackageReference Include="StackExchange.Redis" Version="2.1.30" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kunlun.LPS.Worker.Core\Kunlun.LPS.Worker.Core.csproj" />
+    <ProjectReference Include="..\Kunlun.LPS.Worker.Data\Kunlun.LPS.Worker.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Messages\" />
+  </ItemGroup>
+
+</Project>
